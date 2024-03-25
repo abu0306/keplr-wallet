@@ -25,6 +25,7 @@ export type RNG = <
 ) => Promise<T>;
 
 export class Mnemonic {
+  //TODO: 生成助记词和私钥
   static async generateWallet(
     rng: RNG,
     path: string = `m/44'/118'/0'/0/0`,
